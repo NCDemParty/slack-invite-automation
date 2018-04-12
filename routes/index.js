@@ -20,6 +20,8 @@ router.post('/invite', function(req, res) {
           form: {
             email: req.body.email,
             token: config.slacktoken,
+            channels: 'CA5V6900M',
+            ultra_restricted: true,
             set_active: true
           }
         }, function(err, httpResponse, body) {
