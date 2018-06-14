@@ -20,7 +20,7 @@ router.post('/invite', function(req, res) {
           form: {
             email: req.body.email,
             token: config.slacktoken,
-            channels: 'CA5V6900M',
+            channels: 'GB805P5K7',
             ultra_restricted: true,
             set_active: true
           }
@@ -48,7 +48,7 @@ router.post('/invite', function(req, res) {
             } else if (error === 'invalid_email') {
               error = 'The email you entered is an invalid email.';
             } else if (error === 'invalid_auth') {
-              error = 'Something has gone wrong. Please contact a system administrator.';
+              error = 'Something has gone wrong. Please contact the support desk at support@ncdp.org.';
             }
 
             res.render('result', {
